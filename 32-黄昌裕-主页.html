@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>黄昌裕简历主页</title>
+<link href="css/index-1.css" type="text/css" rel="stylesheet">
+<script  src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	/* 知识技能板块 div隐藏显示 */
+	$(document).ready(function(){
+    	$("#f5-li1").mousemove(function(){
+       		$("#f5-li1").css({"background-color":"#FFFFFF","color":"#000000"});
+			/*$("#f5-d1").hide(500);*/
+			/*$("#f5-d2").show(500);*/
+			
+			$("#f5-d5").stop(false,true);
+			$("#f5-d4").stop(false,true);
+			$("#f5-d3").stop(false,true);
+			/*$("#f5-d1").stop(false,true);*/
+    	});
+		$("#f5-li1").mouseout(function(){
+       		$("#f5-li1").css({"background-color":"","color":"#FFFFFF"});
+			/*$("#f5-d1").show(500);*/
+			/*$("#f5-d2").hide(500);*/
+			
+				
+    	});
+		
+		$("#f5-li2").mousemove(function(){
+			$("#f5-li2").css({"background-color":"#FFFFFF","color":"#000000"})
+			$("#f5-d2").hide(500);
+			$("#f5-d3").show(500);
+			
+			$("#f5-d5").stop(false,true);
+			$("#f5-d4").stop(false,true);
+			$("#f5-d2").stop(false,true);
+			/*$("#f5-d1").stop(false,true);*/
+		});
+		$("#f5-li2").mouseout(function(){
+			$("#f5-li2").css({"background-color":"","color":"#FFFFFF"});
+			$("#f5-d2").show(500);
+			$("#f5-d3").hide(500);
+			
+				
+		});
+		
+		$("#f5-li3").mousemove(function(){
+			$("#f5-li3").css({"background-color":"#FFFFFF","color":"#000000"})
+			$("#f5-d2").hide(500);
+			$("#f5-d4").show(500);
+			
+			$("#f5-d5").stop(false,true);
+			$("#f5-d3").stop(false,true);
+			$("#f5-d2").stop(false,true);
+			/*$("#f5-d1").stop(false,true);*/
+		});
+		$("#f5-li3").mouseout(function(){
+			$("#f5-li3").css({"background-color":"","color":"#FFFFFF"});
+			$("#f5-d2").show(500);
+			$("#f5-d4").hide(500);
+			
+				
+		});
+		
+		$("#f5-li4").mousemove(function(){
+			$("#f5-li4").css({"background-color":"#FFFFFF","color":"#000000"})
+			$("#f5-d2").hide(500);
+			$("#f5-d5").show(500);
+			
+			
+			$("#f5-d4").stop(false,true);
+			$("#f5-d3").stop(false,true);
+			$("#f5-d2").stop(false,true);
+			/*$("#f5-d1").stop(false,true);*/
+		});
+		$("#f5-li4").mouseout(function(){
+			$("#f5-li4").css({"background-color":"","color":"#FFFFFF"});
+			$("#f5-d2").show(500);
+			$("#f5-d5").hide(500);
+			
+				
+		});
+		
+		/* 自我评价板块 点击小方块 div隐藏显示 */
+		$("#f6-li1").click(function(){
+			$("#f6-li1").css({"background-color":"#a080ff"});
+			$("#f6-li2").css({"background-color":"#FFFFFF"});
+			$("#f6-li3").css({"background-color":"#FFFFFF"});
+			$("#f6-d1").show(500);
+			$("#f6-d2").hide(500);
+			$("#f6-d3").hide(500);
+			
+		});
+		$("#f6-li2").click(function(){
+			$("#f6-li2").css({"background-color":"#a080ff"});
+			$("#f6-li1").css({"background-color":"#FFFFFF"});
+			$("#f6-li3").css({"background-color":"#FFFFFF"});
+			$("#f6-d2").show(500);
+			$("#f6-d1").hide(500);
+			$("#f6-d3").hide(500);
+			
+		});
+		
+		$("#f6-li3").click(function(){
+			$("#f6-li3").css({"background-color":"#a080ff"});
+			$("#f6-li2").css({"background-color":"#FFFFFF"});
+			$("#f6-li1").css({"background-color":"#FFFFFF"});
+			$("#f6-d3").show(500);
+			$("#f6-d2").hide(500);
+			$("#f6-d1").hide(500);
+			
+		});
+		/* 首页左侧导航 点击滑动链接 div隐藏显示 */
+		/*$("#f1-li1").mousemove(function(){
+			$("#f1-li1").css({"background-color":"#FFFFFF","color":"#000000"})
+			
+		});
+		$("#f1-li1").mouseout(function(){
+			$("#f1-li1").css({"background-color":"","color":"#FFFFFF"})
+		});
+		
+		$("#f1-li2").mousemove(function(){
+			$("#f1-li2").css({"background-color":"#FFFFFF","color":"#000000"})
+		});
+		$("#f1-li2").mouseout(function(){
+			$("#f1-li2").css({"background-color":"","color":"#FFFFFF"})
+		});
+		
+		$("#f1-li3").mousemove(function(){
+			$("#f1-li3").css({"background-color":"#FFFFFF","color":"#000000"})
+		});
+		$("#f1-li3").mouseout(function(){
+			$("#f1-li3").css({"background-color":"","color":"#FFFFFF"})
+		});*/
+	});
+</script>
+</head>
+
+<body>
+	<div class="zhiding"><a href="#index1"><img src="images/movetop.png"></a></div>
+	
+	<!--模块一-->
+	<div id="index1" class="father1">	
+		<nav class="f1"> 
+			<ul>
+				<li style="font-size:25px;margin-left: 140px"><a id="C" href="#index1" ><strong>主页</strong></a></li>
+				<li style="margin-left: 800px"><a id="C1" href="#index3">基本资料</a></li>
+				<li><a id="C2" href="#index4">工作经历</a></li>
+				<li><a id="C3" href="#index5">技能知识</a></li>
+				<li><a id="C4" href="#index6">自我评价</a></li>
+			
+			</ul>	
+		</nav>
+		
+		<div class="f1-1">简历—<span style="color:#ffcc00">前端设计师</span>
+			<div style="font-size: 20px;margin-left: 120px"><span >生活在于态度———黄昌裕</span></div>
+			<div style="margin-left:150px;margin-top:120px">
+				<a  href="#index3"><img class="tiao" src="images/方向.png"></a>
+			</div>
+		</div>
+		<div>
+		
+		</div>
+		
+		<div class="f1-2">
+			<img id="img1" src="images/IMG_20181003_123103.jpg">
+			<div style="font-size: 18px;color: #FFFFFF;position: relative;left: 70px;top:30px;color: #D18A08">黄昌裕</div>
+			<div class="f1-2-1">
+				<ul >
+					<li id="f1-li1">
+						<a id="f1-a1" href="Page/32黄昌裕-了解我.html" ><img src="images/笔.png" width="20" height="20">&nbsp;&nbsp;了解更多</a>
+					</li>
+					<li id="f1-li2">
+						<a href="Page/32-黄昌裕-我的简历.html"><img src="images/画板-01.png" width="20" height="20">&nbsp;&nbsp;我的简历</a>
+					</li>
+					<li id="f1-li3">
+						<a href="Page/32-黄昌裕-联系我.html"><img src="images/联系人-01.png" width="20" height="20">&nbsp;&nbsp;联系于我</a>
+					</li>
+				</ul>
+			</div>
+			
+		
+		</div>
+	</div>
+	
+	<!--模块二-->
+   <!-- <div id="index2" class="father2">
+		
+	
+	</div>-->
+	
+	<!--模块三-->
+	<div id="index3" class="father3">
+		<div class="f3-1" >基本&nbsp;&nbsp;资料</div>
+		
+	     <div class="f3-2">
+			 <img src="images/checked_72px_1206677_easyicon.net.png "  >
+			 <div style="position:relative;left:160px;top:-60px;height: 100px;width: 200px;font-size: 20px">
+				 <span style="color: yellow;font-size: 25px">&nbsp;个人信息</span><br><br>
+			 	姓名：黄昌裕<br>性别：男<br>
+			 	年龄：18<br>
+				籍贯：福建省南平市
+			 </div>	 	 
+		</div>
+		
+		<div class="f3-3">
+			 <img src="images/cogwheel_73.3125px_1206681_easyicon.net.png">
+			 <div style="position:relative;left:160px;top:-60px;height: 100px;width: 250px;font-size: 20px">
+				 <span style="color: yellow;font-size: 25px">&nbsp;所学专业</span><br><br>
+			 	专业：物联网工程<br>
+				学历：本科<br>
+				所学知识：Java、Html5
+			 </div>	 	 
+		</div>
+		
+		<div class="f3-4">
+			 <img src="images/school_72px_1182184_easyicon.net.png" >
+			 <div style="position:relative;left:160px;top:-60px;height: 100px;width: 200px;font-size: 20px">
+				 <span style="color: yellow;font-size: 25px">&nbsp;毕业学校</span><br><br>
+			 	学校：福建工程学院<br>
+				系别：计算机系<br>
+				专业学科：Html5
+			 </div>	 	 
+		</div>
+		
+		<div class="f3-5" >
+			 <img src="images/chat_92.301639344262px_1206675_easyicon.net.png">
+			 <div style="position:relative;left:160px;top:-60px;height: 100px;width: 270px;font-size: 20px">
+				 <span style="color: yellow;font-size: 25px">&nbsp;联系方式</span><br><br>
+			 	联系电话：15605908865<br>
+				邮箱：1090865895@qq.com
+			 </div>	 	 
+		</div>
+	</div>
+	
+	<!--模块四-->
+	<div id="index4" class="father4">
+		<div class="f4-1">工作&nbsp;&nbsp;经历<br><hr align="center" color="#ffcc00" width="80" size="5"></div>
+		
+		<div class="f4-2">
+			<img style="margin-top: 10px;margin-left: 18px" src="images/PCl.jpg" width="286" height="210">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本人具有在电子公司工作经验，主要在公司当实习生，职位为电气工程师PLC助手，负责自动化产品现场调试及相关plc系统软件编程，以及进行电路板的绘画。使用PCL进行。</p>
+		</div>
+		
+		<div class="f4-3">
+		    <img  style="margin-top: 10px;margin-left: 18px" src="images/CAD.PNG" width="286" height="210">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从事过CAD工程绘图师助手一职，所以对画面的布局，排版设计有一定的了解。在职过程主要是拿到商家的模型图，然后在规定的时间内进行绘画。</p>
+
+		</div>
+		
+		<div class="f4-4">
+		  	<img  style="margin-top: 10px;margin-left: 18px" src="images/null-8007f471f8e93c.jpg" width="286" height="210">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大三时期，因学校安排，在万利达电子工厂进行实习。实习的岗位不定，但是最主要是进行精密电子元器件的组装，以及检测产品的是否合格，进行验收。</p>
+		</div>		
+	</div>
+	
+	<!--模块五-->
+	<div id="index5" class="father5">
+		<div class="f5-1">技能&nbsp;&nbsp;知识<br><hr align="center" color=" #00004d" width="80" size="5"></div>
+		<div class="f5-2">
+			<ul>
+				<li id="f5-li1">掌握Html</li>
+				<li id="f5-li2">掌握Java</li>
+				<li id="f5-li3">掌握Asp</li>
+				<li id="f5-li4">掌握Sql</li>
+			</ul>					
+		</div>
+		<!--<div id="f5-d1" class="f5-3"  style="display:block">
+			<video  src="images/banner.mp4" controls autoplay loop width="800px" height="450px"></video>
+		</div>-->
+		
+		<div id="f5-d2" class="f5-3"  style="display: block">
+		 	<img src="images/html2.jpg"  width="306" height="230" style="position: relative;left:40px;top:20px;">
+			<img src="images/html1.jpg" width="306" height="230" style="position: relative;left:105px;top:20px;">
+			<div style="position: relative;left: 40px;top:30px; width:700px;height: 200px">
+				&nbsp;&nbsp;&nbsp;&nbsp;本人熟悉掌握Html知识，在校园主修Html5科目，对此知识有熟练的掌握。掌握HTML5+CSS3和开发。熟悉JavaScript的核心技术.在校成绩优异.
+			</div>
+			
+		</div>
+		
+		<div id="f5-d3" class="f5-3">
+		 	<img src="images/java1.jpg"  width="306" height="230" style="position: relative;left:40px;top:20px;">
+			<img src="images/java2.png" width="306" height="230" style="position: relative;left:105px;top:20px;">
+			<div style="position: relative;left: 40px;top:30px; width:700px;height: 200px">
+				&nbsp;&nbsp;&nbsp;&nbsp;对Java语言较为熟悉，有深入学习过Java，因此对此JavaScript语言有更加深刻理解。在校期间,因为兴趣所以多次到图书馆借阅相关书籍,因此有一定知识基础.
+			</div>
+		</div>
+		
+		<div id="f5-d4" class="f5-3" >
+		 	<img src="images/asp2.jpg"  width="306" height="230" style="position: relative;left:40px;top:20px;">
+			<img src="images/asp1.jpg" width="306" height="230" style="position: relative;left:105px;top:20px;">
+			<div style="position: relative;left: 40px;top:30px; width:700px;height: 200px">
+				&nbsp;&nbsp;&nbsp;&nbsp;在校期间因为对网页有所兴趣对web的学习较为多，因此对web语言具一定知识储备，能够熟悉前端模块化开发方案.尝试过多种编写.
+			</div>
+		</div>
+		
+		<div id="f5-d5" class="f5-3" >
+		 	<img src="images/sql2.jpg"  width="306" height="230" style="position: relative;left:40px;top:20px;">
+			<img src="images/sql1.jpg" width="306" height="230" style="position: relative;left:105px;top:20px;">
+			<div style="position: relative;left: 40px;top:30px; width:700px;height: 200px">
+				&nbsp;&nbsp;&nbsp;&nbsp;因为生为计算机毕业的学生，对数据库最具有了解，因为无论前端后端的开发，计算机都离不开数据库的操作。因此我熟悉计算机网络技术，服务器及windows操作系统；掌握ORACLE、SQL等数据库.大学有开设过网路安全,因此对于数据库的安全意识较高.
+			</div>
+		</div>
+	</div>
+	
+	<!--模块六-->
+	<div id="index6" class="father6">
+		<div class="f6-1">自我&nbsp;&nbsp;评价<br><hr align="center" color="#ff8080" width="80" size="5"></div>
+		<div class="f6-2">
+			<ul>
+				<li id="f6-li1" style="background-color: #a080ff"></li>
+				<li id="f6-li2"></li>
+				<li id="f6-li3"></li>
+			</ul>
+		</div>
+		<div id="f6-d1" class="f6-3" style="display: block;"> 
+			&nbsp;&nbsp;&nbsp;&nbsp;本人在性格上开朗，为人细心，做事一丝不苟，能吃苦耐劳，工作脚踏实地，有较强的责任心，具有团队合作精神，又具有较强的独立工作能力，思维活跃。
+		</div>
+		
+		<div id="f6-d2" class="f6-3"> 
+			&nbsp;&nbsp;&nbsp;&nbsp;在工作上认真负责，不推卸责任；能承受工作中的压力；工作上可以独当一面；具有团队精神，能与同事，其它部门积极配合，公司利益至上；服从性好，能与上司保持良好的沟通，尊重上司的安排；为人诚实，正直；且好学上进，不断提高工作能力；
+		</div>
+	
+		<div id="f6-d3" class="f6-3"> 
+			&nbsp;&nbsp;&nbsp;&nbsp;在思想上热爱学习，工作态度严谨认真，责任心强，有很好的团队合作能力。有良好的分析、解决问题的思维。以创新、解决客户需求、维护公司利益为宗旨。来接受挑战和更大的发展平台。。
+		</div>
+	 	<div style="width: 250px;height: 320px;position: relative;top:-225px;left:20px;">
+			<img src="images/featured_2.jpg" width="250" height="320">
+		</div>
+		<div style="width: 250px;height: 320px;position: relative;top:-700px;left:1250px;">
+			<img src="images/featured_1.jpg" width="250" height="320">
+		</div>
+		
+	</div>
+	
+	<footer>
+		 18物联网-32&nbsp;&nbsp;@版权所有：黄昌裕&nbsp;&nbsp;&nbsp;<img style="position: relative;top: 8px" src="images/邮箱.png">1090865895@qq.com
+	</footer>
+	
+
+	
+</body>
+</html>
+
+

@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.father1{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 720px;
+}
+.f1-1{
+	font-size: 40px;
+ 	font-weight: bold;
+	color:  #8c8c8c;
+	width: 200px;
+	height: 80px;
+	position: relative;
+	left: 44%;
+	top:20px;
+}
+.shuxina{
+	width: 10px;
+	height: 320px;
+	background-color:   #ffd11a;
+	border-radius: 5px;
+	position: relative;
+	left: 50%;
+	top:120px;
+}
+#d1 {
+	position: relative;
+	left: 320px;
+	top:-260px;
+	width: 300px;
+	height: 400px;
+	
+}
+#d1 dt{
+	font-size: 30px;
+	color:  #8c8c8c;
+	font-weight: bold;
+	margin-bottom: 50px;
+
+	
+}
+#d1 dd{
+	font-size: 20px;
+	color:  #8c8c8c;
+	font-weight: bold;
+	margin-top: 30px;
+	text-align: center;
+	
+}
+#d2{
+	position: relative;
+	left:900px;
+	top:-675px;
+	width: 300px;
+	height: 400px;
+}
+#d2 dt{
+	font-size: 30px;
+	color:  #8c8c8c;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+#d2 dd{
+	font-size: 20px;
+	color:  #8c8c8c;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: center;
+}
+#d2 dd input{
+	font-size:1.1em; /*设置输入框中字体的大小*/
+	height:1.5em; /*设置输入框的高度*/
+	border-radius:5px; /*设置输入框的圆角的大小*/
+	border:1px solid #c8cccf;/*设置输入框边框的粗细和颜色*/
+	color:#000000; /*设置输入框中文字的颜色*/
+	outline:0; /*将输入框点击的时候出现的边框去掉*/
+	text-align:left; /*设置输入框中文字的位置*/
+	display:block; /*将输入框设置为块级元素*/
+	-web-kit-appearance:none;
+    -moz-appearance: none;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:#8c8c8c;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #8c8c8c;
+}
+input::-webkit-input-placeholder{
+  color: #8c8c8c;
+}
+
+#d2 dd textarea{
+	border-radius:5px; 
+	border:1px solid #c8cccf;
+	font-size:1.1em; 	
+}
+.f1-2{
+	position:relative;
+	left: 943px;
+	top:-726px;
+	width: 100px;
+	height: 100px;
+}
+.f1-2 #button1{
+	border: 1px solid  #c8cccf;
+	border-radius: 5px;
+	background: #FDFDFD;
+	height:35px;
+	width: 70px;
+}
+.f1-2 #f1-2-text1{
+	font-size:1.1em; 
+	height:1.8em; 
+	width: 8em;
+	border-radius:5px; 
+	border:1px solid #c8cccf;
+	color:#000000; 
+	outline:0; 
+	text-align:left; 
+	display:block;
+	outline: 0;
+	
+}
+.f1-2 #f1-2-div1{
+	background: #FDFDFD;
+	color:  #333333;
+	width: 107px;
+	height: 47px;
+	position: relative;
+	left: 175px;
+	top:-97px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 27px;
+	letter-spacing:4px;
+	font-style: italic;
+	font-weight: bold;	
+}
+.f1-2 #f1-2-div2{
+	
+	width: 120px;
+	height: 50px;
+	font-size: 13px;
+	position: relative;
+	left: 282px;
+	top: -142px;
+	text-align: center;
+	line-height: 50px;
+	color: blue;
+} 
+.f1-2 #f1-2-div2:hover{
+	cursor:pointer;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background: #b3b3b3;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 15px;
+	font-style: italic;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.fanhui{
+	width: 80px;
+	height: 30px;
+	position: relative;
+	left: 15px;
+	top:-186%;
+	animation: jump 2s infinite;
+}
+.fanhui img:hover{
+	transform: scale(1.2);
+	transition: all 0.3s;
+}
+@keyframes jump {
+	 0% {transform: translateX(0px);}
+	 50% {transform: translateX(-10px);}
+ 	100% {transform: translateX(0px);}
+}

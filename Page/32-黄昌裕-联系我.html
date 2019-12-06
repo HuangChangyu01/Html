@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系我</title>
+<link href="../css/index3-lianxi.css" type="text/css" rel="stylesheet">
+<script language="javascript">
+	window.onload=function(){
+		Ma();
+		draw();
+		
+	}
+	function Ma(){
+		
+		var div=document.getElementById("f1-2-div1");
+		var jishu="";
+		 var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); 
+		for(var i=0;i<4;i++)
+		{
+			var num=Math.floor(Math.random()*1000)%62;
+			jishu +=codeChars[num];
+		}
+		div.innerHTML=jishu;	
+	}
+	
+	function Yanzhen(){
+		var a=document.getElementById("f1-2-div1").innerHTML;
+		var shuru=document.getElementById("f1-2-text1").value;
+		if(shuru.length<=0)
+		{
+			 alert("请输入验证码！");
+		}
+		else if(shuru.toUpperCase()!=a.toUpperCase() )
+		{
+			alert("验证码有误！");
+			Ma();
+		}
+		else
+		{
+			alert("感谢您的留言！");
+		}
+	}
+	
+	function draw(){
+		var imgs =["../images/验证码1.PNG","../images/验证码2.PNG","../images/验证码3.PNG","../images/验证码4.PNG","../images/验证码5.PNG","../images/验证码6.PNG"];
+		var index=Math.floor(Math.random()*6);
+		var img = imgs[index];
+        document.getElementById("f1-2-div1").style.background="url("+img+")";
+		
+		var r=Math.floor(Math.random()*256);
+		var g=Math.floor(Math.random()*256);
+		var b=Math.floor(Math.random()*256);
+		document.getElementById("f1-2-div1").style.color="rgb("+r+','+g+','+b+")"
+	}
+</script>
+</head>
+
+<body>
+	<form action="#" method="post">
+		
+		<div class="father1">
+			<div class="f1-1">
+				联系&nbsp;&nbsp;方式
+				<hr  size="7px" color=" #ffd11a" width="90px" style="border-radius: 5px">
+			</div>
+			<div class="shuxina"></div>
+			<dl id="d1">
+				<dt>
+					我的联系方式:
+				</dt>
+				<dd><img src="../images/邮箱 (1).png"><br>1090865895@qq.com</dd>
+				<dd><img src="../images/qq.png"><br>QQ:109086585</dd>
+				<dd><img src="../images/手机.png"><br>15605908865</dd>
+			</dl>
+			<dl id="d2">
+				<dt>留下您的联系:</dt>
+				<dd><input type="text" placeholder="Your name"></dd>
+				<dd><input type="text" id="t2" placeholder="Email"></dd>
+				<dd><textarea cols="33" rows="5" placeholder="Message"></textarea></dd>
+			</dl>
+			<div class="f1-2">
+				<input id="f1-2-text1" type="text" placeholder="请输入验证码"><br>
+				<input id="button1" type="submit" onclick="Yanzhen()" text="提交" >
+				<div id="f1-2-div1" onclick="Ma(),draw()" ></div>
+				<div id="f1-2-div2"  onclick="Ma(),draw()" >看不清，换一张</div>
+			</div>
+			
+			<div class="fanhui"><a href="../32-黄昌裕-主页.html"><img src="../images/返回.png"></a></div>
+		</div>
+		<footer>
+		 18物联网-32&nbsp;&nbsp;@版权所有：黄昌裕&nbsp;&nbsp;&nbsp;
+		<img style="position: relative;top: 8px" src="../images/邮箱.png">1090865895@qq.com
+	</footer>
+		
+	</form>
+</body>
+</html>

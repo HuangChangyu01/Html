@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>这就是我</title>
+<link href="../css/index2-Ganyuwo.css" type="text/css" rel="stylesheet">
+<script  src="../js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#f1-2-li1").click(function(){
+			$("#f1-d1").fadeToggle();
+		});
+		
+		$("#dianji").click(function(){
+			$(".f2-3-2").toggle();
+		});
+		
+	});
+	window.onload=function(){
+		var curr_index=0;//保存当前焦点元素的索引
+		var time=window.setInterval(autoChange,2000);
+		var button_li=document.getElementById("button").getElementsByTagName("li");// 获取所有按钮
+		var pic_div=document.getElementById("banner_pic").getElementsByTagName("div");//获取所有图片
+		for(var i=0;i<button_li.length;i++)
+		{
+			button_li[i].onmouseover=function(){
+				if(time){
+					clearInterval(time);
+				}
+				for(var j=0;j<pic_div.length;j++){
+					if(button_li[j]==this){
+						curr_index=j;//从当前索引开始
+						button_li[j].className="current";
+						pic_div[j].className="current";
+					}
+					else{
+						//将所有元素改变样式
+						pic_div[j].className="pic";
+						button_li[j].className="but"
+					}
+				}
+			}
+			button_li[i].onmouseout=function(){
+				time=setInterval(autoChange,2000);
+			}	
+		}
+		function autoChange(){
+			++curr_index;
+			if(curr_index==button_li.length){
+				curr_index=0;
+			}
+			for(var i=0;i<button_li.length;i++)
+			{
+				if(i==curr_index){
+					button_li[i].className="current";
+					pic_div[i].className="current";
+					
+				}else{
+					button_li[i].className="but";
+					pic_div[i].className="pic";
+				}
+			}
+		}
+			
+	}
+</script>
+</head>
+
+
+<body>
+	<!--<div class="dongtu"><a  href="#index1"><img  src="../images/movetop.png"></a></div>-->
+	<div id="index1" class="father1">
+		
+		<div class="f1-1">
+			<!--<a>我的简历</a>-->
+		</div>
+		<div class="f1-2">
+			<ul>
+				<li id="f1-2-li1">我的爱好</li>
+				<li><a href="#index3">未来方向</a></li>
+			</ul>
+		</div>
+		<div id="f1-d1" class="f1-3">
+			<ul>
+				<li><a href="#ff3">音乐</a></li>
+				<li style="margin-left: 36px"><a href="#ff2">摄影</a></li>
+				<li style="margin-left: 36px"><a href="#ff1">运动</a></li>
+				<li><a href="#f2-3">电影</a></li>
+			</ul>
+		</div>
+		
+		<div class="f1-4">
+			<div class="banner_pic" id="banner_pic">
+				<div class="current"><img src="../images/null5a4254eaf3108f19.jpg" title="青协合照"><span>青协合照</span></div>
+				<div class="pic"><img src="../images/null-75e3bfb8c7f2245f.jpg" title="自驾游之旅"><span>自驾之行</span></div>
+				<div class="pic"><img src="../images/fe00aa581a82533.jpg" title="毕业之旅"><span>毕业之旅</span></div>
+				<div class="pic"><img src="../images/-252bfb657d9593ea.jpg" title="新生聚会"><span>新生聚会</span></div>
+				<div class="pic"><img src="../images/-41aaeec1df10e703.jpg" title="冬至活动"><span>冬至活动</span></div>
+				<div class="pic"><img src="../images/-40d8411ac3852c92.jpg" title="毕业之旅"><span>毕业之旅</span></div>
+			</div>
+			<ol id="button">
+				<li class="current"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+			</ol>
+			
+		</div>
+		
+		<div class="f1-5">
+			<ul>
+				<li>我</li>
+				<li style="margin-left: 30px">的</li>
+				<li>生</li>
+				<li style="margin-left: 30px">活</li>
+			</ul>
+		</div>
+	</div>
+	<div id="index2" class="father2">
+		<div class="f2-1">我&nbsp;&nbsp;所&nbsp;&nbsp;热&nbsp;&nbsp;爱</div>
+		<div id="ff1" class="f2-2">
+			<div class="f2-2-1">
+				运&nbsp;&nbsp;动
+			</div>
+			<ul>
+				<li><img src="../images/篮球 (1).png">篮球</li>
+				<li><img src="../images/跑步.png">跑步</li>
+				<li><img src="../images/羽毛球.png">羽毛球</li>
+			</ul>		
+		</div>
+		<div id="ff2" class="f2-2">
+			<div class="f2-2-2">
+				摄&nbsp;&nbsp;影
+			</div>
+		
+		    <ul>
+				<li><img src="../images/blog_1.jpg" width="230" height="200" title="2016/05/12拍" ></li>
+				<li><img src="../images/blog_3.jpg" width="230" height="200" title="2017/03/04拍"></li>
+				<li><img src="../images/portfolio_3.jpg" width="230" height="200" title="2018/6/20拍"></li>
+				<li><img src="../images/videoformat.png" width="230" height="200" title="2019/4/12拍"></li>
+			</ul>
+			
+		</div>
+		<div id="ff3" class="f2-2">
+			<div  class="f2-2-3">
+				音&nbsp;&nbsp;乐
+			</div>
+			<ol>
+				<li>
+					<span style="position: relative;top: -15px">青鸟：</span>
+					<audio style="width: 210px;height: 40px;" src="../Media/疾风传OP 12-ブルーバード.mp3" controls></audio>
+				</li>
+				<li>
+					<span style="position: relative;top: -15px">认真的老去：</span>
+					<audio style="width: 210px;height: 40px;" src="../Media/认真地老去 - 张希,曹方.mp3" controls></audio> </li>
+				<li>
+					<span style="position: relative;top: -15px">东京食尸鬼：</span>
+					<audio style="width: 210px;height: 40px;" src="../Media/TK from 凛として時雨 - unravel(TV动画《东京食尸鬼》OP).mp3" controls></audio> 
+				</li>
+				<li>
+					<span style="position: relative;top: -15px">人民广场吃炸鸡：</span>
+					<audio style="width: 210px;height: 40px;" src="../Media/阿肆 - 我在人民广场吃炸鸡.mp3" controls></audio> 
+				</li>
+			</ol>
+		</div>
+	
+		<div id="f2-3" class="f2-3">
+			<div class="f2-3-1" style="display: block">我最欣赏的电影片段</div>
+			<div id="dy1" class="f2-3-2">
+				<video  src="../Media/当幸福来敲门 .mp4" controls loop width="800px" height="450px">
+				</video>
+				<div class="dyn">《当幸福来敲门》---生活中，别忘记给自己鼓掌</div>
+			</div>
+			
+			<div id="dy2" class="f2-3-2" style="display: none">
+				<video  src="../Media/阿甘.mp4" controls loop width="800px" height="450px">
+				</video>
+				<div class="dyn">《阿甘正传》---生活就像一盒巧克力，你永远不知道下一块是什么味道</div>
+			</div>
+			
+			<div id="dianji" style="position: relative;left: 940px;top:-300px; width: 50px;height:50px" >
+				<img src="../images/换.png">
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="index3" class="father3">
+		<div class="f3-1">
+		</div>
+		<div class="f3-2">
+		</div>
+		<ul>
+			<li>未</li>
+			<li style="margin-left: 22px;">来</li>
+			<li>方</li>
+			<li  style="margin-left: 22px;">向</li>
+		</ul>
+		<img  src="../images/portfolio_pic7.jpg">
+		<div class="f3-3">
+			&nbsp;&nbsp;&nbsp;&nbsp;即将毕业的我面对了未来充满了期望，即使从学长学姐他们那里听到毕业后，很多事情不会想现在我想的这样。但是我一点都不畏惧。毕业对我是一个新的开始。我计划好了目前自己的未来计划。我的目标很明确，我需要一份Html5的前端设计师工作。为此目标，我将福州有做的这工作的公司进行调研，看清市场的前景。其次我买了许多相关书籍希望在接下来剩余的时间里努力提高自己的专业水平。
+		</div>
+	</div>
+	<div class="fanhui"><a href="../32-黄昌裕-主页.html"><img src="../images/返回.png"></a></div>
+	<footer>
+		 18物联网-32&nbsp;&nbsp;@版权所有：黄昌裕&nbsp;&nbsp;&nbsp;
+		<img style="position: relative;top: 8px" src="../images/邮箱.png">1090865895@qq.com
+	</footer>
+</body>
+</html>
